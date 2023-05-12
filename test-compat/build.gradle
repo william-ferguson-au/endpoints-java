@@ -123,7 +123,7 @@ dependencies {
   compile group: 'com.googlecode.objectify', name: 'objectify', version: objectifyVersion
   compile group: 'javax.inject', name: 'javax.inject', version: javaxinjectVersion
   compile group: 'javax.servlet', name: 'servlet-api', version: servletVersion
-  compileOnly group: 'com.google.appengine', name: 'appengine-endpoints', version: appengineVersion
+  compileOnly group: 'com.google.appengine', name: 'appengine-endpoints', version: appengineCompatTestVersion
 
   testlibCompile group: 'junit', name: 'junit', version: junitVersion
   testlibCompile group: 'com.google.truth', name: 'truth', version: truthVersion
@@ -134,7 +134,7 @@ dependencies {
   testlibCompile(group: 'com.google.api-client', name: 'google-api-client', version: apiclientVersion) {
     exclude group: 'com.google.guava', module: 'guava-jdk5'
   }
-  appengineSdk "com.google.appengine:appengine-java-sdk:${appengineVersion}"
+  appengineSdk "com.google.appengine:appengine-java-sdk:${appengineCompatTestVersion}"
 }
 
 idea {

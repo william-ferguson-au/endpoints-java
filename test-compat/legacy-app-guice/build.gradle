@@ -18,5 +18,5 @@ dependencies {
   compile project(':endpoints-framework-guice')
   compile project(':endpoints-framework')
   compile project(':test-compat')
-  appengineSdk "com.google.appengine:appengine-java-sdk:${appengineVersion}"
+  appengineSdk "com.google.appengine:appengine-java-sdk:${appengineCompatTestVersion}"
 }

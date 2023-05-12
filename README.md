@@ -17,6 +17,15 @@ in the `com.google.endpoints` group:
 The main documents for consuming Endpoints can be found at
 https://cloud.google.com/endpoints/docs/frameworks/java
 
+## Changes for this fork.
+I am forking the endpoints-java project because it's dependencies are lagging, causing issues with other libraries and the committers seem to be absent.
+The main issues we have dealt with are:
+ - https://github.com/cloudendpoints/endpoints-java/issues/204
+ - Dependencies that containing vulnerabilities or significantly lagging.
+The issues couldn't be dealt with include:
+ - It is using Gradle2 which was superseded on 15-Aug-2016. Upgrading Gradle (or moving to a better build tech) is beyond the scope of this fork.
+ - Bringing some deps forward broke the test in obscure ways so needed to be rolled back.
+
 ## Installing to local Maven
 
 To install test versions to Maven for easier dependency management, simply run:

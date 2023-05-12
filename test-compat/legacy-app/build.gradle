@@ -16,6 +16,6 @@
 
 dependencies {
   compile project(':test-compat')
-  appengineSdk "com.google.appengine:appengine-java-sdk:${appengineVersion}"
-  compile group: 'com.google.appengine', name: 'appengine-endpoints', version: appengineVersion
+  appengineSdk "com.google.appengine:appengine-java-sdk:${appengineCompatTestVersion}"
+  compile group: 'com.google.appengine', name: 'appengine-endpoints', version: appengineCompatTestVersion
 }
